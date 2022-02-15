@@ -3,7 +3,7 @@ name: Test and Deploy to Production
 on:
   push:
     branches:
-      - api
+      - main
 
 jobs:
   test:
@@ -35,7 +35,7 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: 'tribe-video-api' #Must be unique in Heroku
           heroku_email: 'younesaitmha@gmail.com'
-          branch: 'api'
+          branch: 'main'
           usedocker: true
         env:
           HD_NODE_ENV: 'production'
