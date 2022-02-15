@@ -1,0 +1,16 @@
+{
+    "extends": ["eslint:recommended", "prettier"],
+    "plugins": ["jest"],
+    "parserOptions": {
+      "ecmaVersion": 2021,
+      "sourceType": "module"
+    },
+    "env": {
+      "es6": true,
+      "node": true,
+      "jest/globals": true
+    },
+    "rules": {
+      "no-unused-vars": "warn"
+    }
+}

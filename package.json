@@ -1,0 +1,42 @@
+{
+    "name": "tribe-video-api",
+    "version": "1.0.0",
+    "description": "tribe video api",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+      "start": "node app.js",
+      "dev": "nodemon app.js",
+      "lint": "eslint . --ext .js,.mjs",
+      "test": "jest"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/younesaitmha/Tribe-Video-App/tribe-video-api"
+    },
+    "keywords": [
+      "tribe-video-app",
+      "expressJs",
+      "Rest",
+      "API",
+      "NodeJs",
+      "JS",
+      "ES6"
+    ],
+    "author": "younes ait m'ha",
+    "license": "ISC",
+    "devDependencies": {
+      "eslint": "^8.8.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-jest": "^26.0.0",
+      "jest": "^27.4.7",
+      "nodemon": "^2.0.15",
+      "prettier": "^2.5.1"
+    },
+    "dependencies": {
+      "body-parser": "^1.19.1",
+      "cors": "^2.8.5",
+      "dotenv": "^14.3.2",
+      "express": "^4.17.2"
+    }
+}
