@@ -12,4 +12,4 @@ app.get('/', (req, res) => {
     res.json({ status: 'OK' })
 })
 
-app.listen(8080, () => console.log('Server is up and running server! at http://localhost:8080'))
+app.listen(process.env.PORT || 5000, () => console.log('Server is up and running server! at http://localhost:8080'))
