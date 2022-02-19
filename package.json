@@ -5,49 +5,49 @@
     "main": "app.js",
     "type": "module",
     "scripts": {
-      "start": "node app.js",
-      "dev": "nodemon app.js",
-      "lint": "eslint . --ext .js,.mjs",
-      "test": "jest"
+        "start": "node server.js",
+        "dev": "nodemon server.js",
+        "lint": "eslint . --ext .js,.mjs",
+        "test": "jest"
     },
     "repository": {
-      "type": "git",
-      "url": "https://github.com/younesaitmha/Tribe-Video-App/tribe-video-api"
+        "type": "git",
+        "url": "https://github.com/younesaitmha/Tribe-Video-App/tribe-video-api"
     },
     "keywords": [
-      "tribe-video-app",
-      "expressJs",
-      "Rest",
-      "API",
-      "NodeJs",
-      "JS",
-      "ES6"
+        "tribe-video-app",
+        "expressJs",
+        "Rest",
+        "API",
+        "NodeJs",
+        "JS",
+        "ES6"
     ],
     "author": "younes ait m'ha",
     "license": "ISC",
     "engines": {
-      "node": "16.x"
+        "node": "16.x"
     },
     "devDependencies": {
-      "eslint": "^8.8.0",
-      "eslint-config-prettier": "^8.3.0",
-      "eslint-plugin-jest": "^26.0.0",
-      "jest": "^27.4.7",
-      "nodemon": "^2.0.15",
-      "prettier": "^2.5.1"
+        "eslint": "^8.8.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-jest": "^26.0.0",
+        "jest": "^27.4.7",
+        "nodemon": "^2.0.15",
+        "prettier": "^2.5.1"
     },
     "dependencies": {
-      "body-parser": "^1.19.1",
-      "cors": "^2.8.5",
-      "dotenv": "^14.3.2",
-      "express": "^4.17.2",
-      "apollo-server-core": "^3.6.1",
-      "apollo-server-express": "^3.6.1",
-      "bcrypt": "^5.0.1",
-      "dayjs": "^1.10.7",
-      "graphql": "^16.2.0",
-      "jsonwebtoken": "^8.5.1",
-      "mongoose": "^6.1.6",
-      "morgan": "^1.10.0"
+        "body-parser": "^1.19.1",
+        "cors": "^2.8.5",
+        "dotenv": "^14.3.2",
+        "express": "^4.17.2",
+        "apollo-server-core": "^3.6.1",
+        "apollo-server-express": "^3.6.1",
+        "bcrypt": "^5.0.1",
+        "dayjs": "^1.10.7",
+        "graphql": "^16.2.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.1.6",
+        "morgan": "^1.10.0"
     }
 }
