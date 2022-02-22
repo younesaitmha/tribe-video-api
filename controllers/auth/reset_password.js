@@ -1,6 +1,6 @@
-import { getUserByEmail } from '../../models/user.js'
+import { getUserByEmail, hashPassword } from '../../models/user.js'
 
-async function resetPassword(req, res) {
+async function ResetPasswordController(req, res) {
     const { email, new_password, conf_password } = req.body
 
     if (new_password != conf_password) {
@@ -14,14 +14,13 @@ async function resetPassword(req, res) {
 
     const user = await getUserByEmail(email)
 
-    if (userWithEmail)
+    if (!user)
         return res
             .status(409)
             .send({ message: "Account with this email doesn't exists" })
 
-    hashed_pass = hashPassword(new_password)
-    user.password = new_password
+    user.password = hashPassword(new_password)
     res.send(user)
 }
 
-export default resetPassword
+export default ResetPasswordController
